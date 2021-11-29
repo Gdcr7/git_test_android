@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(const MyApp());
 }
 
@@ -11,9 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'testing git and github',
-      theme: ThemeData(
-        primarySwatch: Colors.orange
-      ),
+      theme: ThemeData(primarySwatch: Colors.orange),
       home: const HomePage(),
     );
   }
@@ -28,10 +26,14 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Hello, github!'),
       ),
-      body: const Center(
-        child: Text('Hello this is me testing github'),
+      body: Center(
+        child: ListView(
+          children: const [
+            Text('Hello motherfucker, this is a development branch'),
+            Icon(Icons.star),
+          ],
+        ),
       ),
     );
   }
 }
-
