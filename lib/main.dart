@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'testing git and github',
       theme: ThemeData(
-        primarySwatch: Colors.blue
+        primarySwatch: Colors.orange
       ),
       home: const HomePage(),
     );
